@@ -3,8 +3,8 @@ import NavLink from "./NavLink";
 
 const links = [
   { target: "about", text: "Our Restaurant" },
-  { target: "menu", text: "Our Menu" },
   { target: "reservation", text: "Make a Reservation" },
+  { target: "menu", text: "Our Menu" },
   { target: "map", text: "Visit Us" },
   { target: "contact", text: "Contact Us" }
 ];

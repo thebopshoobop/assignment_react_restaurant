@@ -2,7 +2,7 @@ import React from "react";
 
 const MenuItem = ({ title, description, image }) => {
   return (
-    <section>
+    <section className="col-sm-4">
       <h4>
         {title}
       </h4>

@@ -3,7 +3,7 @@ import MenuItem from "./MenuItem";
 
 const MenuSection = ({ title, products, textType }) => {
   return (
-    <section className="col-sm-6">
+    <section>
       <h3 className={`text-${textType}`}>
         {title}
       </h3>
