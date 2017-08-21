@@ -1,27 +1,20 @@
 import React from "react";
-
+import NavLink from "./NavLink";
 const NavBar = () => {
   return (
-    // <nav className="navbar navbar-fixed">
-    //   <div className="container-fluid">
-    //
-    //     <div class="navbar-header">
-    //       <ul className="nav navbar-nav">
-    //         <li>
-    //           <a href="#menu">Our Menu</a>
-    //           <a href="#reservation">Make a Reservation</a>
-    //           <a href="#contact">Contact Us</a>
-    //           <a href="#map">Visit Us</a>
-    //         </li>
-    //       </ul>
-    //     </div>
-    //   </div>
-    // </nav>
-    <ul className="nav nav-tabs">
-      <li>A list item</li>
-      <li>Another list item</li>
-    </ul>
-
+    <nav className="navbar navbar-default">
+      <div className="container-fluid">
+        <div className="navbar-header">
+          <ul className="nav navbar-nav">
+            <NavLink target="about" text="Our Restaurant" />
+            <NavLink target="menu" text="Our Menu" />
+            <NavLink target="reservation" text="Make a Reservation" />
+            <NavLink target="map" text="Visit Us" />
+            <NavLink target="contact" text="Contact Us" />
+          </ul>
+        </div>
+      </div>
+    </nav>
   );
 };
 
