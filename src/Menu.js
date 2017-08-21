@@ -52,18 +52,15 @@ const sections = [
   }
 ];
 
-const Menu = () => {
-  return (
-    <PageSection id="menu" type="primary" title="Our Menu">
-      {sections.map(section =>
-        <MenuSection
-          title={section.title}
-          products={section.products}
-          textType={section.textType}
-        />
-      )}
-    </PageSection>
-  );
-};
+const Menu = () =>
+  <PageSection id="menu" type="primary" title="Our Menu">
+    {sections.map(section =>
+      <MenuSection
+        title={section.title}
+        products={section.products}
+        textType={section.textType}
+      />
+    )}
+  </PageSection>;
 
 export default Menu;

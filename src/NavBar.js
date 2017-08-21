@@ -9,24 +9,17 @@ const links = [
   { target: "contact", text: "Contact Us" }
 ];
 
-const NavBar = () => {
-  return (
-    <nav className="navbar navbar-default navbar-fixed-top">
-      <div className="container-fluid">
-        <div className="navbar-header">
-          <ul className="nav navbar-nav">
-            {links.map(link =>
-              <NavLink
-                target={link.target}
-                text={link.text}
-                key={link.target}
-              />
-            )}
-          </ul>
-        </div>
+const NavBar = () =>
+  <nav className="navbar navbar-default navbar-fixed-top">
+    <div className="container-fluid">
+      <div className="navbar-header">
+        <ul className="nav navbar-nav">
+          {links.map(link =>
+            <NavLink target={link.target} text={link.text} key={link.target} />
+          )}
+        </ul>
       </div>
-    </nav>
-  );
-};
+    </div>
+  </nav>;
 
 export default NavBar;

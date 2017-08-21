@@ -8,23 +8,20 @@ const elements = [
   { name: "phoneNumber", label: "Phone Number" }
 ];
 
-const ReservationForm = () => {
-  return (
-    <PageSection id="reservation" type="success" title="Make a Reservation!">
-      <form className="col-sm-6 col-sm-offset-3">
-        {elements.map(element =>
-          <FormElement
-            name={element.name}
-            label={element.label}
-            type={element.type}
-          />
-        )}
-        <button type="submit" className="btn btn-primary">
-          Reserve
-        </button>
-      </form>
-    </PageSection>
-  );
-};
+const ReservationForm = () =>
+  <PageSection id="reservation" type="success" title="Make a Reservation!">
+    <form className="col-sm-6 col-sm-offset-3">
+      {elements.map(element =>
+        <FormElement
+          name={element.name}
+          label={element.label}
+          type={element.type}
+        />
+      )}
+      <button type="submit" className="btn btn-primary">
+        Reserve
+      </button>
+    </form>
+  </PageSection>;
 
 export default ReservationForm;
