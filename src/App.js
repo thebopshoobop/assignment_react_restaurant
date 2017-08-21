@@ -4,6 +4,7 @@ import PageHeader from "./PageHeader";
 import ReservationForm from "./ReservationForm";
 import Menu from "./Menu";
 import ContactForm from "./ContactForm";
+import Map from "./Map";
 
 const App = () => {
   return (
@@ -14,6 +15,7 @@ const App = () => {
         <ReservationForm />
         <Menu />
         <ContactForm />
+        <Map />
       </main>
     </div>
   );
