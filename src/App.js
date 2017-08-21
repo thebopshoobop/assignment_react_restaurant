@@ -3,6 +3,7 @@ import NavBar from "./NavBar";
 import PageHeader from "./PageHeader";
 import ReservationForm from "./ReservationForm";
 import Menu from "./Menu";
+import ContactForm from "./ContactForm";
 
 const App = () => {
   return (
@@ -12,6 +13,7 @@ const App = () => {
         <PageHeader id="about" title="Fancy Feast for All" imgSrc="feast.jpg" />
         <ReservationForm />
         <Menu />
+        <ContactForm />
       </main>
     </div>
   );
